@@ -44,7 +44,7 @@ Anyway::in_array([1, 2, 3], fn () => false);
 // Object of class Closure could not be converted to int
 ```
 
-`Anyway` works with all functions defined in the global namespace.
+`Anyway` works with all functions in the global space.
 
 ## License
 
