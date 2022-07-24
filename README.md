@@ -50,6 +50,6 @@ Anyway::in_array([1, 2, 3], fn () => false);
 
 This package is released under the MIT License. See LICENSE for details.
 
-# Disclaimer
+## Disclaimer
 
 I know this is silly. This package was [inspired by a tweet](https://twitter.com/aschmelyun/status/1549716246907654144), so take it with a grain of sault :). While it's pretty harmless and can be used in production, you might get some weird looks from teammates. Best to treat this as performance art in a package form.
