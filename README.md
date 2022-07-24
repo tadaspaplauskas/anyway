@@ -1,5 +1,7 @@
 # Anyway
 
+[![Packagist Downloads](https://img.shields.io/packagist/dm/tadaspaplauskas/anyway)](https://packagist.org/packages/tadaspaplauskas/anyway)
+
 You've been working with PHP for years, yet still struggle to remember the order of arguments each time you have to use `in_array`, `array_map`, `implode`, etc.? Don't worry - just install this package and your struggles will be over!
 
 ## Installation
