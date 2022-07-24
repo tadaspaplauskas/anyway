@@ -12,10 +12,44 @@ composer require tadaspaplauskas/anyway
 
 ## Getting started
 
+Quick! What's the first argument in the `in_array` function: array or value?
+
+```php
+in_array([1, 2, 3], 2);
+
+// TypeError
+// in_array(): Argument #2 ($haystack) must be of type array, int given
+```
+
+Wrong :(
+
+The good news is that `Anyway` knows what you meant and isn't a stickler for rules:
+
+```php
+use Anyway;
+
+Anyway::in_array([1, 2, 3], 2);
+
+// true
+```
+
+Of course, if arguments don't make sense in any order, `Anyway` will still let you know about it...
+
+```php
+use Anyway;
+
+Anyway::in_array([1, 2, 3], fn () => false);
+
+// ErrorException
+// Object of class Closure could not be converted to int
+```
+
+`Anyway` works with all functions defined in the global namespace.
+
 ## License
 
 This package is released under the MIT License. See LICENSE for details.
 
 # Disclaimer
 
-This package was [inspired by a tweet](https://twitter.com/aschmelyun/status/1549716246907654144), so take it with a grain of sault :). While it's pretty harmless and can be used in production, you might get some weird looks from teammates. Best to treat this as performance art in a package form.
+I know this is silly. This package was [inspired by a tweet](https://twitter.com/aschmelyun/status/1549716246907654144), so take it with a grain of sault :). While it's pretty harmless and can be used in production, you might get some weird looks from teammates. Best to treat this as performance art in a package form.
