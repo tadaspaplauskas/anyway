@@ -48,6 +48,10 @@ Anyway::in_array([1, 2, 3], fn () => 'what?');
 // Object of class Closure could not be converted to int
 ```
 
+## Limits
+
+The package works with functions that expect arguments of different types. For example, it will do nothing for `explode` or `strpos`, because both expected arguments are strings.
+
 ## License
 
 This package is released under the MIT License. See LICENSE for details.
