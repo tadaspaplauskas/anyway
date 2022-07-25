@@ -50,7 +50,7 @@ Anyway::in_array([1, 2, 3], fn () => 'what?');
 
 ## Limits
 
-The package works with functions that expect arguments of different types. For example, it will do nothing for `explode` or `strpos`, because both expected arguments are strings.
+The package works with functions that expect arguments of different types. For example, it will not work with `explode` or `strpos`, because both expected arguments are strings.
 
 ## License
 
