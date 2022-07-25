@@ -32,9 +32,9 @@ Anyway::in_array([1, 2, 3], 2);
 
 // true
 
-Anyway::in_array(2, [1, 2, 3]);
+Anyway::in_array(4, [1, 2, 3]);
 
-// true
+// false
 ```
 
 `Anyway` will work with any function in the global space. Of course, if arguments don't make sense in any order, `Anyway` will still let you know about it:
