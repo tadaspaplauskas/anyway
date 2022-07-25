@@ -37,7 +37,7 @@ Anyway::in_array(2, [1, 2, 3]);
 // true
 ```
 
-Of course, if arguments don't make sense in any order, `Anyway` will still let you know about it:
+`Anyway` will work with any function in the global space. Of course, if arguments don't make sense in any order, `Anyway` will still let you know about it:
 
 ```php
 use Anyway;
@@ -47,8 +47,6 @@ Anyway::in_array([1, 2, 3], fn () => 'what?');
 // ErrorException
 // Object of class Closure could not be converted to int
 ```
-
-`Anyway` works with all functions in the global space.
 
 ## License
 
