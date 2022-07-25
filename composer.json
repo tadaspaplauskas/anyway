@@ -1,6 +1,6 @@
 {
     "name": "tadaspaplauskas/anyway",
-    "description": "Switches the order of function arguments in case of a TypeError, so you don't have to google it.",
+    "description": "Automatically switches the order of function arguments and retries it in case of a TypeError.",
     "type": "library",
     "require": {
         "php": "^8.0"
